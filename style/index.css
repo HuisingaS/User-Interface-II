@@ -55,8 +55,8 @@ html {
 
 body {
     width: 100%;
-    background-color: rgb(135, 211, 194);
-    /* background-image: url("/images/mother.jpeg"); */
+    /* background-color: rgb(135, 211, 194); */
+    background-image: url("../images/mother.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
