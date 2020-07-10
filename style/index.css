@@ -265,7 +265,6 @@ footer {
 
 /*---------------------break at 800px------------------*/
 
-
 @media(max-width: 800px){
 
 body {
@@ -358,13 +357,13 @@ p.likeSee {
 
 @media(max-width: 500px){
 
-
 h1 {
     font-size: 3.5rem;
 }
 
 h2.name {
     font-size: 2.2rem;
+    margin-bottom: .9%;
 }
 
 p.aboutMeSub {
