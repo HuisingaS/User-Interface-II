@@ -50,12 +50,9 @@ html {
     font-size: 62.5%;
     font-family: sans-serif;
     color: black;
-    max-width: 1800px;
 }
 
 body {
-    width: 100%;
-    /* background-color: rgb(135, 211, 194); */
     background-image: url("../images/mother.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -63,37 +60,38 @@ body {
 }
 
 header {
-    border-top: solid white 3px;
-    border-bottom: solid white 3px;
+    border-top: solid #1E5785 3px;
+    border-bottom: solid #1E5785 3px;
     background-color: #1e857f;
     margin-top: 3%;
 }
 
 h1 {
-    font-family: 'Cardo', serif;
+    font-family: 'Modern Antiqua', cursive;
     font-size: 4.4rem;
     padding: 3%;
     padding-bottom: 1%;
+    text-shadow: #857f1e 1px 1px;
 }
 
 h2.name {
     font-size: 3.2rem;
     font-family: 'Merienda One', cursive;
     margin-bottom: 5%;
+    text-shadow: black 5px 5px;
 }
 
-h3 {
-    font-size: 2rem;
-    color: black;
+.projectName {
+    font-size: 1.7rem;
+    color: white;
     font-family: 'Inria Serif', serif;
-    background-color: lightgray;
+    background-color: #857f1e;
     border: 2px solid black;
     padding: 2%;
 }
 
 nav {
     display: flex;
-    flex-direction: row;
     font-family: 'Cardo', serif;
     font-size: 2.2rem;
     text-align: center;
@@ -111,11 +109,11 @@ a.nav {
     padding-right: 20px;
     padding-left: 20px;
     transition: .3s;
-    background-color: #3572aa;
+    background-color: #857f1e;
 }
 
 a.nav:hover {
-    color: #52e2db;
+    color: #857f1e;
     background-color: black;
     border: 0.3rem solid white;
     border-radius: 25px;
@@ -130,7 +128,7 @@ a.nav:visited {
     font-size: 1.7rem;
     font-family: 'Cardo', serif;
     color: white;
-    background-color: #3572aa;
+    background-color: #857f1e;
     width: 140px;
     padding: 7px;
     border: 0.3rem solid black;
@@ -141,7 +139,7 @@ a.nav:visited {
 }
 
 #myProjects:hover {
-    color: #52e2db;
+    color: #857f1e;
     background-color: black;
     border: 0.3rem solid white;
     transform: scale(1.3);
@@ -153,16 +151,17 @@ a.nav:visited {
 
 div.aboutMe {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     color: white;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 #inTheClouds {
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: 4px solid white;
-    border-radius: 25px;
-}
+        width: 45%;
+        height: 25%;
+    }
 
 div.aboutMeSub {
     display: flex;
@@ -180,6 +179,8 @@ div.projects {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-left: 2%;
+    margin-right: 2%;
     text-align: center;
 }
 
@@ -189,17 +190,20 @@ div.col {
 
 img.projectImage {
     margin-top: 5%;
-    border:  5px solid white;
+
+    border:  5px solid #1E5785;
     border-radius: 25px;
 }
 
 img.projectImage:hover {
-    border:  5px solid black;
+    border:  5px solid #857f1e;
     opacity: .9;
 }
 
 p.aboutMe {
-    font-size: 2.0rem;
+    height: 60%;
+    width: 80%;
+    font-size: 1.9rem;
     margin-top: 5%;
     margin-right: 3%;
     font-family: 'Cardo', serif;
@@ -210,7 +214,7 @@ p.aboutMe {
 }
 
 .likeSee {
-    font-family: 'Merienda One', cursive;
+    font-family: 'Modern Antiqua', cursive;
     font-size: 2.5rem;  
     padding: 1%;
     margin: auto;
@@ -222,7 +226,7 @@ a.contactMe {
     font-size: 2.2rem;
     border: 0.3rem solid black;
     color: whitesmoke;
-    background-color: #3572aa;
+    background-color: #857f1e;
     padding: 10px;
     text-decoration: none;
     margin: auto;
@@ -231,7 +235,7 @@ a.contactMe {
 }
 
 a.contactMe:hover {
-    color: #52e2db;
+    color: #857f1e;
     background-color: black;
     border: 0.3rem solid white;
     transform: scale(1.3);
@@ -255,11 +259,11 @@ h6 {
 }
 
 footer {
-    border-top: solid white 3px;
-    border-bottom: solid white 3px;
+    border-top: solid #1E5785 3px;
+    border-bottom: solid #1E5785 3px;
     font-size: 2.3rem;
     text-align: center;
-    background-color: #52e2db;
+    background-color: #1e857f;
     margin-bottom: 3%;
 }
 
@@ -300,9 +304,9 @@ nav {
     margin: auto;
     margin-bottom: 2%;
     margin-top: 2%;
-    font-size: 2.3rem;
+    font-size: 2rem;
     text-decoration: none;
-    max-width: 30%;
+    max-width: 25%;
 }
 
 #inTheClouds {
@@ -310,6 +314,7 @@ nav {
     height: 60%;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 5%;
 }
 
 div.aboutMe {
@@ -332,7 +337,8 @@ p.aboutMe {
 }
 
 #myProjects {
-    width: 100px;
+    flex-wrap: wrap;
+    width: 140px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 2%;
@@ -357,25 +363,64 @@ p.likeSee {
 
 @media(max-width: 500px){
 
+body {
+    width: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    max-width: 25%;
+}
+
 h1 {
     font-size: 3.5rem;
 }
 
 h2.name {
-    font-size: 2.2rem;
+    font-size: 2.9rem;
     margin-bottom: .9%;
 }
 
 p.aboutMeSub {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     margin-top: 20px;
 }
 
-.contactMe {
-    font-size: 1.3rem;
+h3.projectName {
+    font-size: 1.4rem;
 }
 
 #myProjects {
-    font-size: 1.7rem; 
+    font-size: 1.5rem;
+    width: 110px;
+    padding: 2%;
 }
+
+p.aboutMe {
+    font-size: 1.6rem;
+}
+
+a.contactMe {
+    font-size: 1.8rem;
+    width: 140px;
+}
+
+#inTheClouds {
+    width: 80%;
+    height: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+}
+    
+h2.likeSee {
+    font-size: 1.8rem;
+}
+
 }
